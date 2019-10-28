@@ -12,7 +12,7 @@
 
 - **Exploitation**
 
-    Remote command execution on the root shell by modifying the content in the http post request .
+    Remote command execution on the root shell by modifying the content in the HTTP post request.
 
 - **Affected Components**
 
@@ -36,6 +36,6 @@ Affected function: save()
 
     ![auto_upgrade_lua_code](fig/auto_upgrade_lua_code.png)
 
-    Then, we can see that the server append the data to a command directly without checking whether the data is modified maliciously too, causing the command attacker want to execute appended to the command.
+    Then, the server appends the data to a command directly without checking whether the data is modified maliciously too, causing the command that the attacker wants to execute to be attached to the command.
 
-    Finally, the router will execute the command "reboot", which causing a DoS.
+    Finally, the router will execute the command "reboot", which causes a DoS.
