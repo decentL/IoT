@@ -39,3 +39,9 @@ Affected function: save()
     Then, the server appends the data to a command directly without checking whether the data is modified maliciously too, causing the command that the attacker wants to execute to be attached to the command.
 
     Finally, the router will execute the command "reboot", which causes a DoS.
+    
+- **CVE-ID**
+   
+   [CVE-2019-19117](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19117)
+   
+This vulnerability is detected by NESA Lab (nesa.zju.edu.cn), with our custom tool. Please contact liupeiyu@zju.edu.cn if you need more info about the team, the tool or the vulnerability.
